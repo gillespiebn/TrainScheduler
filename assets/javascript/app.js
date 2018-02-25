@@ -12,6 +12,12 @@
 
 var database = firebase.database();
 
+// refresh page every minute
+
+setTimeout(function() {
+	window.location.reload(1);
+}, 60000);
+
 // A button to add trains
 
 $('#addTrainButton').on("click", function(event) {
